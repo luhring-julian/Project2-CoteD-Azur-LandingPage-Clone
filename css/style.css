@@ -1,0 +1,240 @@
+/*Importando fonte para o projeto*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*Resetando configuração do navegador*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Classes Auxiliares*/
+.clear {
+	clear: both;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*Estilização*/
+html,
+body {
+	height: 100%;
+}
+
+/*Cabeçalho*/
+header {
+	background-color: #bdbdbd;
+	padding: 10px 2% 40px 2%;
+}
+
+header .logo-1 {
+	float: left;
+	width: 160px;
+	height: 60px;
+	background-image: url(../images/logo1.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+header .logo-2 {
+	float: right;
+	width: 160px;
+	height: 60px;
+	background-image: url(../images/logo2.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*Banner - Formulário*/
+section.cover-form {
+	width: 100%;
+}
+
+.bg {
+	background-image: url(../images/bg-form.jpg);
+	height: 560px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.form-container {
+	margin-right: 40px;
+	width: 400px;
+	height: 105%;
+	position: absolute;
+	top: -2.5%;
+	right: 30px;
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 1px 2px 15px 1px;
+}
+
+.form-container h2 {
+	background-color: rgba(234, 236, 239, 0.7);
+	padding: 25px 15px;
+	color: #000;
+	font-size: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.form-container form {
+	margin-top: 20px;
+	padding: 15px;
+}
+
+.form-container form p {
+	font-size: 14px;
+	color: #525252;
+}
+
+.form-wraper:not(:first-child) {
+	margin-top: 40px;
+}
+
+.form-wraper:last-child {
+	margin-top: 20px;
+}
+
+.form-container form input[type='text'],
+.form-container form input[type='email'] {
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 10px;
+}
+
+.form-container form input[type='submit'] {
+	background-color: #033c50;
+	text-transform: uppercase;
+	color: #fff;
+	width: 100%;
+	font-size: 25px;
+	height: 50px;
+	cursor: pointer;
+	border: 0;
+}
+
+/*Seção Chamada*/
+section.chamada {
+	width: 100%;
+	text-align: center;
+}
+
+section.chamada .container {
+	background-color: #897f77;
+	padding: 70px 0 50px 0;
+}
+
+section.chamada h2 {
+	width: 98%;
+	max-width: 700px;
+	display: inline-block;
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+section.chamada p {
+	width: 98%;
+	max-width: 700px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+/*Seção Mosaico*/
+.flex-mosaico {
+	display: flex;
+}
+
+.item1-mosaico {
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+}
+
+.item2-mosaico {
+	width: 40%;
+	padding: 60px 40px;
+	background-color: #b59982;
+}
+
+.item2-mosaico p {
+	color: #fff;
+}
+
+/*Rodapé*/
+footer {
+	text-align: center;
+	background-color: #bdbdbd;
+	padding: 20px 0;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+footer img {
+	width: 120px;
+}
+
+footer p {
+	margin-top: 8px;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+	.flex-mosaico {
+		display: block;
+	}
+
+	.item1-mosaico {
+		width: 100%;
+		padding-top: 80%;
+	}
+
+	.item2-mosaico {
+		width: 100%;
+		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.bg {
+		text-align: center;
+		padding: 40px 0;
+		height: auto;
+	}
+
+	.form-container {
+		width: 96%;
+		max-width: 400px;
+		height: auto;
+		position: static;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	header {
+		text-align: center;
+	}
+
+	.logo-1,
+	.logo-2 {
+		float: none;
+		display: inline-block;
+		margin-top: 10px;
+	}
+}
